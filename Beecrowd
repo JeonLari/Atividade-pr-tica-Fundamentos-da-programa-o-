@@ -1,0 +1,206 @@
+# Atividade – Programação (beecrowd)
+
+Resolução de problemas básicos da plataforma **beecrowd (URI Online Judge)**, desenvolvidos em **Python**.
+
+---
+
+## Problema 1000 – Hello World
+
+```python
+print("Hello World!")
+
+## Problema 1001 - Extremamente Básico
+
+a = int(input())
+b = int(input())
+
+x = a + b
+
+print("X =", x)
+
+## Problema 1002 - Área do Círculo
+
+raio = float(input())
+pi = 3.14159
+
+area = pi * raio * raio
+
+print(f"A={area:.4f}")
+
+## Problema 1003 - Soma Simples
+
+a = int(input())
+b = int(input())
+
+soma = a + b
+
+print("SOMA =", soma)
+
+## Problema 1004 - Produto Simples
+
+a = int(input())
+b = int(input())
+
+prod = a * b
+
+print("PROD =", prod)
+
+## Problema 1005 - Média 1
+
+a = float(input())
+b = float(input())
+
+media = (a * 3.5 + b * 7.5) / 11
+
+print(f"MEDIA = {media:.5f}")
+
+## Problema 1006 - Média 2
+
+a = float(input())
+b = float(input())
+c = float(input())
+
+media = (a * 2 + b * 3 + c * 5) / 10
+
+print(f"MEDIA = {media:.1f}")
+
+## Problema 1007 - Diferença
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+diferenca = (a * b) - (c * d)
+
+print("DIFERENCA =", diferenca)
+
+## Problema 8 - Salário
+
+numero = int(input())
+horas = int(input())
+valor_hora = float(input())
+
+salario = horas * valor_hora
+
+print("NUMBER =", numero)
+print(f"SALARY = U$ {salario:.2f}")
+
+## Problema 1009 - Salário com Bônus
+
+nome = input()
+salario = float(input())
+vendas = float(input())
+
+total = salario + (vendas * 0.15)
+
+print(f"TOTAL = R$ {total:.2f}")
+
+## Problema 1010 - Cálculo Simples
+
+codigo1, qtd1, valor1 = input().split()
+qtd1 = int(qtd1)
+valor1 = float(valor1)
+
+codigo2, qtd2, valor2 = input().split()
+qtd2 = int(qtd2)
+valor2 = float(valor2)
+
+total = (qtd1 * valor1) + (qtd2 * valor2)
+
+print(f"VALOR A PAGAR: R$ {total:.2f}")
+
+## Problema 1011 - Esfera
+
+raio = int(input())
+pi = 3.14159
+
+volume = (4.0/3) * pi * (raio ** 3)
+
+print(f"VOLUME = {volume:.3f}")
+
+## Problema 1012 - Área
+
+a, b, c = map(float, input().split())
+pi = 3.14159
+
+triangulo = (a * c) / 2
+circulo = pi * (c ** 2)
+trapezio = (a + b) * c / 2
+quadrado = b ** 2
+retangulo = a * b
+
+print(f"TRIANGULO: {triangulo:.3f}")
+print(f"CIRCULO: {circulo:.3f}")
+print(f"TRAPEZIO: {trapezio:.3f}")
+print(f"QUADRADO: {quadrado:.3f}")
+print(f"RETANGULO: {retangulo:.3f}")
+
+## Problema 1013 - O Maior
+
+a, b, c = map(int, input().split())
+
+maior_ab = (a + b + abs(a - b)) // 2
+maior = (maior_ab + c + abs(maior_ab - c)) // 2
+
+print(f"{maior} eh o maior")
+
+## Problema 1014 - Consumo
+
+distancia = int(input())
+combustivel = float(input())
+
+consumo = distancia / combustivel
+print(f"{consumo:.3f} km/l")
+
+## Problema 1015 - Distância Entre Dois Pontos
+
+x1, y1 = map(float, input().split())
+x2, y2 = map(float, input().split())
+
+distancia = ((x2 - x1)**2 + (y2 - y1)**2) ** 0.5
+
+print(f"{distancia:.4f}")
+
+## Problema 1016 - Distância
+
+distancia = int(input())
+
+tempo = distancia * 2
+
+print(f"{tempo} minutos")
+
+## Problema 1017 - Gasto de Combustível
+
+tempo = int(input())
+velocidade = int(input())
+
+distancia = tempo * velocidade
+litros = distancia / 12
+
+print(f"{litros:.3f}")
+
+## Problema 1018 - Cédulas
+
+valor = int(input())
+print(valor)
+
+cedulas = [100, 50, 20, 10, 5, 2, 1]
+
+for c in cedulas:
+    quantidade = valor // c
+    print(f"{quantidade} nota(s) de R$ {c},00")
+    valor %= c
+
+## Problema 1019 - Conversão de Tempo
+
+N = int(input())
+
+horas = N // 3600
+N %= 3600
+
+minutos = N // 60
+segundos = N % 60
+
+print(f"{horas}:{minutos}:{segundos}")
+
