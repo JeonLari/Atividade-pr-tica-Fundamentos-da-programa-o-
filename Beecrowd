@@ -5,11 +5,15 @@ Resolução de problemas básicos da plataforma **beecrowd (URI Online Judge)**,
 ---
 
 ## Problema 1 – Hello World
+**Descrição:**
+Escreva um programa que imprima a mensagem **Hello World!** na tela.
 
 ```python
 print("Hello World!")
 
 ## Problema 2 - Extremamente Básico
+**Descrição**
+Leia dois valores inteiros, calcule a soma entre eles e imprima o resultado no formato X = valor
 
 a = int(input())
 b = int(input())
@@ -19,6 +23,8 @@ x = a + b
 print("X =", x)
 
 ## Problema 3 - Área do Círculo
+**Descrição:**
+Leia o valor do raio de um círculo e calcule sua área utilizando a fórmula A = π × R², considerando π = 3.14159. O resultado deve ser exibido com 4 casas decimais.
 
 raio = float(input())
 pi = 3.14159
@@ -28,6 +34,8 @@ area = pi * raio * raio
 print(f"A={area:.4f}")
 
 ## Problema 4 - Soma Simples
+**Descrição:**
+Leia dois valores inteiros, calcule a soma entre eles e apresente o resultado no formato SOMA = valor
 
 a = int(input())
 b = int(input())
@@ -37,6 +45,8 @@ soma = a + b
 print("SOMA =", soma)
 
 ## Problema 5 - Produto Simples
+**Descrição:**
+Leia dois valores inteiros, calcule o produto entre eles e imprima o resultado no formato PROD = valor
 
 a = int(input())
 b = int(input())
@@ -46,6 +56,8 @@ prod = a * b
 print("PROD =", prod)
 
 ## Problema 6 - Média 1
+**Descrição:**
+Leia dois valores reais, calcule a média ponderada considerando os pesos 3.5 e 7.5, e imprima o resultado com 5 casas decimais.
 
 a = float(input())
 b = float(input())
@@ -55,6 +67,8 @@ media = (a * 3.5 + b * 7.5) / 11
 print(f"MEDIA = {media:.5f}")
 
 ## Problema 7 - Média 2
+**Descrição:**
+Leia três valores reais, calcule a média ponderada com pesos 2, 3 e 5, e imprima o resultado com 1 casa decimal.
 
 a = float(input())
 b = float(input())
@@ -65,6 +79,8 @@ media = (a * 2 + b * 3 + c * 5) / 10
 print(f"MEDIA = {media:.1f}")
 
 ## Problema 8 - Diferença
+**Descrição:**
+Leia quatro valores inteiros A, B, C e D. Calcule a diferença entre o produto de A e B e o produto de C e D.
 
 a = int(input())
 b = int(input())
@@ -76,6 +92,8 @@ diferenca = (a * b) - (c * d)
 print("DIFERENCA =", diferenca)
 
 ## Problema 9 - Salário
+**Descrição:**
+Leia o número do funcionário, a quantidade de horas trabalhadas e o valor recebido por hora. Calcule e imprima o salário do funcionário.
 
 numero = int(input())
 horas = int(input())
@@ -87,6 +105,8 @@ print("NUMBER =", numero)
 print(f"SALARY = U$ {salario:.2f}")
 
 ## Problema 10 - Salário com Bônus
+**Descrição:**
+Leia o nome do vendedor, seu salário fixo e o valor total de vendas no mês. Calcule o salário final considerando 15% de comissão sobre as vendas.
 
 nome = input()
 salario = float(input())
@@ -97,6 +117,8 @@ total = salario + (vendas * 0.15)
 print(f"TOTAL = R$ {total:.2f}")
 
 ## Problema 11 - Cálculo Simples
+**Descrição:**
+Leia os dados de duas peças (código, quantidade e valor unitário) e calcule o valor total a ser pago.
 
 codigo1, qtd1, valor1 = input().split()
 qtd1 = int(qtd1)
@@ -111,6 +133,8 @@ total = (qtd1 * valor1) + (qtd2 * valor2)
 print(f"VALOR A PAGAR: R$ {total:.2f}")
 
 ## Problema 12 - Esfera
+**Descrição:**
+Leia o valor do raio de uma esfera e calcule o seu volume utilizando a fórmula V = (4/3) × π × R³.
 
 raio = int(input())
 pi = 3.14159
@@ -120,6 +144,8 @@ volume = (4.0/3) * pi * (raio ** 3)
 print(f"VOLUME = {volume:.3f}")
 
 ## Problema 13 - Área
+**Descrição:**
+Leia três valores A, B e C. Calcule e mostre as áreas do triângulo, círculo, trapézio, quadrado e retângulo.
 
 a, b, c = map(float, input().split())
 pi = 3.14159
@@ -137,6 +163,8 @@ print(f"QUADRADO: {quadrado:.3f}")
 print(f"RETANGULO: {retangulo:.3f}")
 
 ## Problema 14 - O Maior
+**Descrição:**
+Leia três valores inteiros e determine qual deles é o maior.
 
 a, b, c = map(int, input().split())
 
@@ -146,6 +174,8 @@ maior = (maior_ab + c + abs(maior_ab - c)) // 2
 print(f"{maior} eh o maior")
 
 ## Problema 15 - Consumo
+**Descrição:**
+Leia a distância total percorrida e o total de combustível gasto. Calcule o consumo médio do automóvel.
 
 distancia = int(input())
 combustivel = float(input())
@@ -154,6 +184,8 @@ consumo = distancia / combustivel
 print(f"{consumo:.3f} km/l")
 
 ## Problema 16 - Distância Entre Dois Pontos
+**Descrição:**
+Leia as coordenadas de dois pontos no plano cartesiano e calcule a distância entre eles.
 
 x1, y1 = map(float, input().split())
 x2, y2 = map(float, input().split())
@@ -163,6 +195,8 @@ distancia = ((x2 - x1)**2 + (y2 - y1)**2) ** 0.5
 print(f"{distancia:.4f}")
 
 ## Problema 17 - Distância
+**Descrição:**
+Leia a distância em quilômetros e calcule o tempo necessário para um carro alcançar essa distância, considerando uma diferença de velocidade fixa.
 
 distancia = int(input())
 
@@ -171,6 +205,8 @@ tempo = distancia * 2
 print(f"{tempo} minutos")
 
 ## Problema 18 - Gasto de Combustível
+**Descrição:**
+Leia o tempo gasto na viagem e a velocidade média. Calcule a quantidade de combustível consumida, considerando 12 km/l.
 
 tempo = int(input())
 velocidade = int(input())
@@ -181,6 +217,8 @@ litros = distancia / 12
 print(f"{litros:.3f}")
 
 ## Problema 19 - Cédulas
+**Descrição:**
+Leia um valor inteiro e determine o menor número de cédulas necessárias para representá-lo.
 
 valor = int(input())
 print(valor)
@@ -193,6 +231,8 @@ for c in cedulas:
     valor %= c
 
 ## Problema 20 - Conversão de Tempo
+**Descrição:**
+Leia um valor inteiro representando o tempo em segundos e converta para o formato horas:minutos:segundos.
 
 N = int(input())
 
